@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Webcam config</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"> </script>
+</head>
+<body>
+    <input type="radio" name="effect" checked="true" id="bw" />
+    <label for="bw">Black/White</label>
+    <br />
+    <input type="radio" name="effect" id="invbw" />
+    <label for="invbw">Black/White (inverted)</label>
+    <br />
+    <input type="radio" name="effect" id="gray" />
+    <label for="gray">Grayscale</label>
+    <br />
+    <input type="radio" name="effect" id="rainbow" />
+    <label for="rainbow">Rainbow hell</label>
+    <br />
+    <input type="radio" name="effect" id="inverted" />
+    <label for="inverted">Inverted</label>
+    <br />
+    <input type="radio" name="effect" id="blur" />
+    <label for="blur">Blur</label>
+    <br />
+    <input type="radio" name="effect" id="edges" />
+    <label for="edges">Edges / edge highlighting</label>
+    <br />
+    <input type="radio" name="effect" id="rainbow_edges" />
+    <label for="rainbow_edges">Party mode (rainbow + edges)</label>
+    <br />
+    <input type="radio" name="effect" id="none" />
+    <label for="none">None</label>
+    <br />
+    <input type="checkbox" id="erosion" checked="true" />
+    <label for="erosion">Erosion (noise reduction)</label>
+    <br />
+    <input type="checkbox" id="removebg" />
+    <label for="removebg">Background removal</label>
+    <br />
+    <input type="checkbox" id="useipserver" />
+    <label for="useipserver">Use IP server</label>
+    <br />
+    <input type="checkbox" id="usehands" />
+    <label for="usehands">Use hand tracking server</label>
+    <br />
+    <input type="text" id="toptext" value="Big text here" />
+    <label for="toptext">Top text</label>
+    <br />
+    <input type="text" id="secondtext" value="Small text here" />
+    <label for="secondtext">Second text</label>
+    <br />
+    <input type="number" id="width" value="1280" max="1920" min="640" />
+    <label for="width">Output width</label>
+    <br />
+    <input type="number" id="height" value="720" max="1080" min="360" />
+    <label for="height">Output height</label>
+    <br />
+    <button onclick="save()">Apply</button>
+</body>
+</html>
